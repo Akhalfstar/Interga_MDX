@@ -1,0 +1,3907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanania</title>
+  </head>
+
+  <style>
+    .col-md-6 {
+      flex: 1;
+    }
+
+    body {
+      font-family: "Montserrat";
+    }
+
+    .breadcrumbs {
+      padding: 0% !important;
+    }
+
+    .ul.breadcrumbs {
+      padding-bottom: 0 !important;
+    }
+
+    .column {
+      padding: 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .justify-content-evenly {
+      justify-content: space-evenly;
+    }
+
+    .justify-content-around {
+      justify-content: space-around;
+    }
+
+    .justify-content-center {
+      justify-content: center;
+    }
+
+    .pb-7 {
+      padding-bottom: 40px;
+    }
+
+    .pb-8 {
+      padding-bottom: 65px;
+    }
+
+    .bd_l {
+      border-top: 1px solid #fff;
+    }
+
+    .performance-section > .wor {
+      display: flex;
+      flex-direction: revert;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .new {
+      align-items: initial !important;
+    }
+
+    .new > .col-lg-4 {
+      flex: 0 0 auto;
+      width: calc(100% / 3);
+      padding: 17px;
+    }
+
+    .w-75 {
+      width: 75% !important;
+    }
+
+    .mx-auto {
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+
+    .mx-5 {
+      margin: 0 3rem;
+    }
+
+    .p-0 {
+      padding: 0 !important;
+    }
+
+    .p-1 {
+      padding: 0.25rem !important;
+    }
+
+    .p-2 {
+      padding: 0.5rem !important;
+    }
+
+    .p-3 {
+      padding: 1rem !important;
+    }
+
+    .p-4 {
+      padding: 1.5rem !important;
+    }
+
+    .p-5 {
+      padding: 3rem !important;
+    }
+
+    .px-0 {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .px-1 {
+      padding-right: 0.25rem !important;
+      padding-left: 0.25rem !important;
+    }
+
+    .px-2 {
+      padding-right: 0.5rem !important;
+      padding-left: 0.5rem !important;
+    }
+
+    .px-3 {
+      padding-right: 1rem !important;
+      padding-left: 1rem !important;
+    }
+
+    .px-4 {
+      padding-right: 1.5rem !important;
+      padding-left: 1.5rem !important;
+    }
+
+    .px-5 {
+      padding-right: 3rem !important;
+      padding-left: 3rem !important;
+    }
+
+    .py-0 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .py-1 {
+      padding-top: 0.25rem !important;
+      padding-bottom: 0.25rem !important;
+    }
+
+    .py-2 {
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    }
+
+    .py-3 {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+
+    .py-4 {
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
+    }
+
+    .py-5 {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+
+    .pt-0 {
+      padding-top: 0 !important;
+    }
+
+    .pt-1 {
+      padding-top: 0.25rem !important;
+    }
+
+    .pt-2 {
+      padding-top: 0.5rem !important;
+    }
+
+    .pt-3 {
+      padding-top: 1rem !important;
+    }
+
+    .pt-4 {
+      padding-top: 1.5rem !important;
+    }
+
+    .pt-5 {
+      padding-top: 3rem !important;
+    }
+
+    .pe-0 {
+      padding-right: 0 !important;
+    }
+
+    .pe-1 {
+      padding-right: 0.25rem !important;
+    }
+
+    .pe-2 {
+      padding-right: 0.5rem !important;
+    }
+
+    .pe-3 {
+      padding-right: 1rem !important;
+    }
+
+    .pe-4 {
+      padding-right: 1.5rem !important;
+    }
+
+    .pe-5 {
+      padding-right: 3rem !important;
+    }
+
+    .pb-0 {
+      padding-bottom: 0 !important;
+    }
+
+    .pb-1 {
+      padding-bottom: 0.25rem !important;
+    }
+
+    .pb-2 {
+      padding-bottom: 0.5rem !important;
+    }
+
+    .pb-3 {
+      padding-bottom: 1rem !important;
+    }
+
+    .pb-4 {
+      padding-bottom: 1.5rem !important;
+    }
+
+    .pb-5 {
+      padding-bottom: 3rem !important;
+    }
+
+    .ps-0 {
+      padding-left: 0 !important;
+    }
+
+    .ps-1 {
+      padding-left: 0.25rem !important;
+    }
+
+    .ps-2 {
+      padding-left: 0.5rem !important;
+    }
+
+    .ps-3 {
+      padding-left: 1rem !important;
+    }
+
+    .ps-4 {
+      padding-left: 1.5rem !important;
+    }
+
+    .ps-5 {
+      padding-left: 3rem !important;
+    }
+
+    .col-sm-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+    }
+
+    .mt-0 {
+      margin-top: 0 !important;
+    }
+
+    .mt-1 {
+      margin-top: 0.25rem !important;
+    }
+
+    .mt-2 {
+      margin-top: 0.5rem !important;
+    }
+
+    .mt-3 {
+      margin-top: 1rem !important;
+    }
+
+    .mt-4 {
+      margin-top: 1.5rem !important;
+    }
+
+    .mt-5 {
+      margin-top: 3rem !important;
+    }
+
+    .mt-auto {
+      margin-top: auto !important;
+    }
+
+    .me-0 {
+      margin-right: 0 !important;
+    }
+
+    .me-1 {
+      margin-right: 0.25rem !important;
+    }
+
+    .me-2 {
+      margin-right: 0.5rem !important;
+    }
+
+    .me-3 {
+      margin-right: 1rem !important;
+    }
+
+    .me-4 {
+      margin-right: 1.5rem !important;
+    }
+
+    .me-5 {
+      margin-right: 3rem !important;
+    }
+
+    .me-auto {
+      margin-right: auto !important;
+    }
+
+    .mb-0 {
+      margin-bottom: 0 !important;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.25rem !important;
+    }
+
+    .mb-2 {
+      margin-bottom: 0.5rem !important;
+    }
+
+    .mb-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .mb-4 {
+      margin-bottom: 1.5rem !important;
+    }
+
+    .mb-5 {
+      margin-bottom: 3rem !important;
+    }
+
+    .mb-auto {
+      margin-bottom: auto !important;
+    }
+
+    .ms-0 {
+      margin-left: 0 !important;
+    }
+
+    .ms-1 {
+      margin-left: 0.25rem !important;
+    }
+
+    .ms-2 {
+      margin-left: 0.5rem !important;
+    }
+
+    .ms-3 {
+      margin-left: 1rem !important;
+    }
+
+    .ms-4 {
+      margin-left: 1.5rem !important;
+    }
+
+    .ms-5 {
+      margin-left: 3rem !important;
+    }
+
+    .ms-auto {
+      margin-left: auto !important;
+    }
+
+    .p-0 {
+      padding: 0 !important;
+    }
+
+    .p-1 {
+      padding: 0.25rem !important;
+    }
+
+    .p-2 {
+      padding: 0.5rem !important;
+    }
+
+    .p-3 {
+      padding: 1rem !important;
+    }
+
+    .p-4 {
+      padding: 1.5rem !important;
+    }
+
+    .p-5 {
+      padding: 3rem !important;
+    }
+
+    .px-0 {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .col-sm-12 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .col-md-6 {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+
+    .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+    }
+
+    /* .performance-section>.wor>.col-lg-4{ height: 100%; } */
+    .h-100 {
+      height: 100% !important;
+    }
+
+    .px-0 {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .gap-0 {
+      gap: 0 !important;
+    }
+
+    .gap-1 {
+      gap: 0.25rem !important;
+    }
+
+    .gap-2 {
+      gap: 0.5rem !important;
+    }
+
+    .gap-3 {
+      gap: 1rem !important;
+    }
+
+    .gap-4 {
+      gap: 1.5rem !important;
+    }
+
+    .gap-5 {
+      gap: 3rem !important;
+    }
+
+    .wor {
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .d-flex,
+    .wor {
+      display: flex;
+    }
+
+    .row {
+      max-width: 100%;
+    }
+
+    .justify-content-center {
+      justify-content: center;
+    }
+
+    .justify-content-between {
+      justify-content: space-between;
+    }
+
+    .Bsl {
+      align-items: baseline !important;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .main-div {
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .inner-div {
+      max-width: 96%;
+      margin: 0 auto;
+    }
+
+    .seo {
+      background: #fff;
+    }
+
+    .seo > .inner-div {
+      max-width: 96%;
+      margin: 0 auto;
+    }
+
+    .Dis > p {
+      text-transform: capitalize;
+    }
+
+    .acura_banner_sec {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hed_3 p {
+      font-size: 20px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .inner-4 {
+      max-width: 1200px !important;
+      margin: 0 auto;
+    }
+
+    .acura_banner_sec_imgs .main_img {
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      line-height: 0;
+    }
+
+    .audio-title h1 {
+      font-size: 50px;
+      letter-spacing: 2px;
+    }
+
+    .section-8 h2 {
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: -4px;
+    }
+
+    .Crgo {
+      /* gap: 2%; */
+      justify-content: center;
+      padding-top: 30px;
+      align-items: initial !important;
+    }
+
+    .Crgo > .col-sm-4 {
+      /* flex: 0 0 auto; */
+      width: calc(100% / 3);
+      padding: 8px 17px;
+      /* width: 31.333333%; */
+    }
+
+    .Crgo > .col-sm-4:first-child,
+    .Crgo > .col-sm-4:nth-child(4) {
+      padding-left: 0%;
+    }
+
+    .Crgo > .col-sm-4:nth-child(3),
+    .Crgo > .col-sm-4:nth-child(6) {
+      padding-right: 0%;
+    }
+
+    .Crgo > .col-sm-4 img {
+      max-width: 100%;
+      width: 100%;
+      height: calc(100% - 20px);
+    }
+
+    .btn {
+      width: 50%;
+    }
+
+    /* .btn_2 { width: 20% !important; } */
+    .acura_banner_sec_imgs .main_img img {
+      width: 100%;
+    }
+
+    .acura_banner_sec_imgs .main_img:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: linear-gradient(
+        240.72deg,
+        rgba(0, 0, 0, 0.45) 24.81%,
+        rgba(0, 0, 0, 0) 67.96%
+      );
+      width: 100%;
+      height: 100%;
+    }
+
+    .acura_banner_sec_imgs_cnt {
+      color: #fff;
+      position: absolute;
+      left: 2%;
+      bottom: 41px;
+      z-index: 1;
+    }
+
+    .acura_banner_sec_imgs_cnt2 {
+      color: #fff;
+      position: absolute;
+      right: 40px;
+      bottom: 32px;
+      z-index: 1;
+    }
+
+    .acura_banner_sec_lft h1 {
+      margin-bottom: 7px;
+      line-height: 1.1;
+      font-weight: 400;
+      /* font-size: 4rem; */
+      font-size: 3.7vw;
+    }
+
+    .acura_banner_sec_lft h3 {
+      /* font-size: 2.1rem; */
+      font-weight: 400;
+      font-size: 1.85vw;
+    }
+
+    .acura_banner_sec_imgs_cnt h5 {
+      font-size: calc(0.1em + 1vw);
+      /* font-size: 22px; */
+      font-weight: 400;
+      /* margin-bottom: 50px; */
+    }
+
+    .acura_banner_sec_lft .start_prc {
+      display: inline-block;
+      /* font-size: 30px; */
+      font-weight: 700;
+      font-size: 1.55vw;
+      margin-top: 44px;
+    }
+
+    .acura_banner_sec_lft {
+      position: absolute;
+      letter-spacing: 1.5px;
+      left: 3rem;
+      font-weight: 900;
+      top: 35%;
+      transform: translateY(-50%);
+      color: #fff;
+      z-index: 1;
+    }
+
+    .acura_banner_sec_imgs_cnt2 h5 {
+      font-size: calc(0.05em + 1vw);
+    }
+
+    .butn_div {
+      background: #000;
+      padding: 40px 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .butn_2 {
+      background: #004687;
+      color: #fff;
+      /* font-size: calc(.1em + 1vw); */
+      font-size: 1.5em;
+      width: 25%;
+      margin: 0% auto;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .butn {
+      background: #e6231e;
+      color: #fff;
+      font-size: 19px;
+      width: 25%;
+      text-align: center;
+    }
+
+    .BN {
+      display: flex;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+
+    .BN > a {
+      color: #fff;
+    }
+
+    .BN > .btn {
+      width: 22.9%;
+      margin: 0 auto;
+    }
+
+    .pl-0 {
+      padding-left: 0 !important;
+    }
+
+    .boxr-0 {
+      padding-right: 0 !important;
+    }
+
+    .boxl-0 {
+      padding-left: 0 !important;
+    }
+
+    .pr-0 {
+      padding-right: 0 !important;
+    }
+
+    .per > h1,
+    h4,
+    p {
+      padding: 0 4%;
+    }
+
+    .p-5 {
+      padding: 2.9rem !important;
+    }
+
+    /* .btn { display: inline-block; font-weight: 400; line-height: 1.5; color: #212529; text-align: center; text-decoration: none; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; user-select: none; background-color: transparent; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; border-radius: .25rem; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out } */
+    .btn-primary {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+    }
+
+    .btn-check:focus + .btn-primary,
+    .btn-primary:focus {
+      color: #fff;
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+      box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+    }
+
+    .btn-check:active + .btn-primary,
+    .btn-check:checked + .btn-primary,
+    .btn-primary.active,
+    .btn-primary:active,
+    .show > .btn-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #0a58ca;
+      border-color: #0a53be;
+    }
+
+    .btn-check:active + .btn-primary:focus,
+    .btn-check:checked + .btn-primary:focus,
+    .btn-primary.active:focus,
+    .btn-primary:active:focus,
+    .show > .btn-primary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+    }
+
+    .btn-primary.disabled,
+    .btn-primary:disabled {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-group-lg > .btn,
+    .btn-lg {
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      border-radius: 0.3rem;
+    }
+
+    .btn-group-lg > .btn + .dropdown-toggle-split,
+    .btn-lg + .dropdown-toggle-split {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn {
+        transition: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .BN > a:hover {
+      text-decoration: none;
+      color: #000;
+      background: #fff;
+    }
+
+    .btn:hover {
+      color: #e6231e;
+    }
+
+    .main-div img {
+      max-width: 100%;
+      width: 100%;
+      /* height: calc(100% - 120px); */
+    }
+
+    .section-2 {
+      background-color: white;
+      color: #000;
+    }
+
+    .s2 {
+      flex: 1;
+    }
+
+    .BN > a > div {
+      text-decoration: none;
+    }
+
+    .BN > a > div:hover {
+      color: #000;
+      background-color: #fff;
+      text-decoration: none;
+    }
+
+    .butn_div > a > div:hover {
+      color: #000;
+      background-color: #fff;
+      text-decoration: none;
+    }
+
+    .btn:hover a {
+      background: #fff;
+      color: #e6231e;
+    }
+
+    /* .s2>p {
+    line-height: 1.7rem;
+    font-size: 16px;
+    padding-top: 16px;
+} */
+
+    a {
+      text-decoration: none;
+    }
+
+    .s2 h4 {
+      color: #e48616;
+      text-transform: uppercase;
+      padding-top: 10%;
+      font-family: "Montserrat";
+      font-weight: 600;
+    }
+
+    .s2 > div > p:first-child {
+      font-weight: bold;
+      margin-top: 40px;
+      font-size: 20px;
+      font-family: "Montserrat";
+      margin-bottom: 7px;
+    }
+
+    .pb-6 {
+      padding-bottom: 50px;
+    }
+
+    .section-5 p {
+      padding-left: 0;
+    }
+
+    .s3 p {
+      font-size: 0.9rem;
+    }
+
+    .performance-title h4 {
+      padding-top: 6% !important;
+    }
+
+    .s2 > p {
+      line-height: 1.5rem;
+      font-size: 1.1vw;
+      /* padding-top: 16px; */
+    }
+
+    .s2 > h3 {
+      padding: 0 2.2rem 0 0;
+      font-size: 1.3vw;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* .s2>h3 {
+    padding: 0 2.2rem 0 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+} */
+
+    /* h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: "Montserrat" !important;
+    } */
+
+    .inner-3 {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .section-10 h4 {
+      padding-top: 5% !important;
+    }
+
+    .hed > h4 {
+      color: #e48616;
+      text-transform: uppercase;
+      padding-top: 4%;
+      font-weight: 600;
+      margin-bottom: 0%;
+      font-family: "Montserrat";
+      margin-bottom: -10px;
+      /* font-size: 22px; */
+    }
+
+    .hed > h1 {
+      /* color: #fff; */
+      padding-bottom: 1%;
+      font-size: 46px;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 1%;
+      font-weight: 400;
+    }
+
+    .hed > p {
+      max-width: 929px;
+      margin: 0% auto;
+      font-size: 18px;
+    }
+
+    .CA_2 {
+      /* max-width: 1090px !important; */
+      margin: 0% auto;
+    }
+
+    .CA_2 > p {
+      max-width: 1090px !important;
+      margin: 0% auto;
+    }
+
+    .hed_2 > h2 {
+      font-weight: 100;
+      margin: 10px 0;
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: -4px;
+    }
+
+    .hed_2 > p {
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-bottom: -4px;
+    }
+
+    .section-3 {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .s3 {
+      flex: 1;
+    }
+
+    .s3 h4 {
+      text-transform: uppercase;
+      padding-top: 4%;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .sec-3 {
+      padding-top: 30px;
+    }
+
+    .tbl > ul > li {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .performance-title h3 {
+      color: #e48616;
+      margin-bottom: 0;
+    }
+
+    .s2 > h1 {
+      /* font-size: 44.866px; */
+      font-size: 2.34vw;
+      font-family: "Montserrat";
+    }
+
+    .performance-title h2 {
+      margin-bottom: 0;
+      padding: 20px 0px;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .performance-title p {
+      font-weight: 400;
+      font-size: 19px;
+      color: #000000;
+      margin-bottom: 50px;
+    }
+
+    .box-div {
+      background: #fafafa;
+      padding: 25px;
+      /* margin-bottom: 25px; */
+      height: auto;
+      /* margin: 0 1.5rem 40px; */
+    }
+
+    .box-div p {
+      max-width: 400px;
+      font-size: 16px;
+      margin: 0 auto;
+    }
+
+    .box-div h3 {
+      font-size: 22px;
+      margin-bottom: 0;
+      padding: 10px 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .section-5 {
+      background-color: #565656;
+      color: #fff;
+    }
+
+    .section-5 > .row > .col-sm-6 > img {
+      width: 100%;
+    }
+
+    .section-5 > .row {
+      display: flex;
+      align-items: center;
+    }
+
+    /* gallery */
+    .gallery-title {
+      margin: 0 0 40px;
+    }
+
+    .bgblack {
+      background: #000;
+    }
+
+    .gallery-section h3 {
+      color: #e48616;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .gallery-section h4 {
+      padding-top: 15%;
+    }
+
+    .gallery-section h2 {
+      margin-bottom: 0;
+      padding: 20px 0px 0;
+      color: #000000;
+      font-weight: 400;
+    }
+
+    .gallery-img img {
+      width: 100%;
+      transition: 0.3s;
+      vertical-align: bottom;
+    }
+
+    .gallery-img {
+      overflow: hidden;
+    }
+
+    .gallery-img:hover img {
+      transform: scale(1.1);
+    }
+
+    /* gallery */
+    /* Audio-connectivity-css */
+    .audio-title {
+      margin: 40px 0;
+    }
+
+    .audio-title h3 {
+      color: #e48616;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .audio-title h2 {
+      margin-bottom: 0;
+      padding: 20px 0px 0;
+      color: #000000;
+      font-weight: 400;
+    }
+
+    .connectivity-images img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+
+    .connectivity-images {
+      position: relative;
+    }
+
+    .hover-effect {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .hover-effect h2 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .on-overlay {
+      position: relative;
+    }
+
+    .para-div {
+      position: absolute;
+      top: 0;
+      background: #11121270;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: 0.5s;
+      -webkit-transition: all 500ms ease;
+    }
+
+    .para-div p {
+      color: #fff;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      height: 100%;
+      padding: 0px 50px;
+    }
+
+    .on-overlay:hover .para-div {
+      height: 100%;
+    }
+
+    .on-overlay:hover .hover-effect {
+      display: none;
+    }
+
+    /* Audio-connectivity-css */
+    .section-7 {
+      background: #fafafa;
+    }
+
+    .section-8 {
+      background: #fff;
+    }
+
+    .mrp h1 {
+      color: #fff;
+      font-size: 44px;
+      padding-bottom: 25px;
+      padding-top: 25px;
+    }
+
+    .mrp .Card_2 img {
+      /* height: calc(100% - 200px) !important; */
+      height: auto !important;
+    }
+
+    .mrp .Card_2 h4 {
+      font-weight: 500;
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .Card_1 {
+      background: #fafafa;
+      margin-top: 30px;
+      width: calc(85% / 3);
+      max-width: 100%;
+      margin: 0 20px 30px;
+    }
+
+    .pdb0 {
+      padding: 0 !important;
+    }
+
+    .Card_1 > h4 {
+      background-color: #fafafa;
+      font-weight: 600;
+      font-size: 1.4rem;
+      padding-top: 35px !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-9 img,
+    .section-10 img {
+      height: calc(100% - 160px) !important;
+    }
+
+    .Card_3 {
+      margin-top: -20px;
+      width: calc(100% / 4);
+      max-width: 100%;
+      padding: 17px;
+      /* margin: 40px 20px 0;*/
+    }
+
+    .Card_3:first-child,
+    .Card_3:nth-child(5) {
+      padding-left: 0;
+    }
+
+    .Card_3:nth-child(4),
+    .Card_3:nth-child(8) {
+      padding-right: 0;
+    }
+
+    .Card_3 > h4 {
+      font-weight: 600;
+      font-size: 1.4rem;
+      background: #fafafa;
+      height: 135px;
+      padding-top: 35px !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Card_2 > h4 {
+      font-size: 1.6rem;
+      font-weight: 100;
+    }
+
+    .Card_2 > h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-bottom: 15px;
+    }
+
+    .py-6 {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+    }
+
+    .Card_2 > p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: grey;
+    }
+
+    /* .s10 { background-color: #FAFAFA; width: 27.5rem; padding: 20px; } */
+    .s10 {
+      /* background-color: #FAFAFA; */
+      width: calc(100% / 4);
+      padding: 17px;
+    }
+
+    .s10 img {
+      height: calc(100% - 120px);
+    }
+
+    /* .s10>p { font-size: 22px; font-weight: 800; text-transform: uppercase; background: #FAFAFA; padding-top: 40px; line-height: 1.3; height: 135px; } */
+    .s10 > p {
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: #fafafa;
+      line-height: 1.1;
+      height: 135px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bg-white {
+      background: #fff;
+    }
+
+    .colr {
+      color: #000;
+    }
+
+    .mrp {
+      background: #000000;
+    }
+
+    .px-6 {
+      padding-left: 1.3rem !important;
+      padding-right: 1.3rem !important;
+    }
+
+    .seo p {
+      padding-left: 0 !important;
+    }
+
+    .mrp > .d-flex {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .mw {
+      max-width: 96%;
+      margin: 0% auto;
+    }
+
+    .gap-6 {
+      gap: 2.5rem !important;
+    }
+
+    .box-div > img {
+      width: 19%;
+      max-width: 100%;
+    }
+
+    .Card_2 {
+      background-color: #fff;
+      color: #000;
+      /* width: 32.33%; */
+      width: calc(91.6% / 3);
+    }
+
+    /* .mrp > .row > .col-sm-4{ background-color: #fff; color: #000; } */
+    /* For Desktop View */
+    .pnb {
+      padding-bottom: 1.2rem;
+    }
+
+    @media screen and (max-width: 1252px) and (min-width: 867px) {
+      .bhu {
+        background: #fff;
+        padding: 15vh 0;
+      }
+    }
+
+    @media screen and (max-width: 1251px) {
+      .w-75 {
+        width: 100% !important;
+      }
+
+      .section-5 > .wor > .p-5 {
+        padding: 0rem 1.2rem !important;
+      }
+    }
+
+    @media screen and (max-width: 1120px) {
+      .box-div p {
+        max-width: 400px;
+        font-size: 0.9rem !important;
+        margin: 0 auto;
+        padding: 10px;
+        height: 210px;
+      }
+
+      .box-div {
+        background: #fafafa;
+        height: auto;
+        margin: 0 0.7rem 25px;
+        padding: 30px 10px;
+      }
+
+      /* .box-div p {
+        max-width: 400px;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 10px;
+    } */
+    }
+
+    @media screen and (max-width: 1024px) {
+      /* .s10{ width: 23.5vw; padding: 20px 15px; }*/
+      .s2 > img {
+        /* padding-top: 20px; */
+      }
+
+      .btn {
+        width: 45%;
+      }
+
+      .Card_2 {
+        background-color: #fff;
+        color: #000;
+        /* width: 32.33%; */
+        width: calc(87.8% / 3);
+      }
+    }
+
+    @media screen and (max-width: 930px) {
+      .ac {
+        align-items: center;
+      }
+
+      .butn_2 {
+        background: #004687;
+        color: #fff;
+        /* font-size: calc(.1em + 1vw); */
+        font-size: 1.5em;
+        width: 30%;
+        margin: 0% auto;
+        text-align: center;
+        padding: 15px 0px;
+      }
+
+      .btn {
+        width: 45%;
+      }
+    }
+
+    /* For Tablet View */
+
+    @media screen and (min-width: 885px) and (max-width: 866px) {
+      .box-div {
+        height: 55vw !important;
+      }
+    }
+
+    @media screen and (max-width: 866px) {
+      .sec-3 {
+        padding-top: 30px;
+        justify-content: baseline !important;
+      }
+
+      .new > .col-lg-4 {
+        flex: 0 0 auto;
+        width: calc(100% / 2);
+        padding: 17px;
+      }
+
+      .section-7 > .inner-div {
+        padding: 0 35px;
+      }
+
+      .hover-effect h2 {
+        color: #fff;
+        font-size: 2.4vh;
+        padding: 0 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .para-div p {
+        font-size: 2vw;
+        padding: 0px 10px;
+      }
+
+      .s2 > h1 {
+        /* font-size: 44.866px; */
+        font-size: 7vw;
+        font-family: "Montserrat";
+      }
+
+      .s2 > p {
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+        padding-top: 16px;
+      }
+
+      .s2 > h3 {
+        padding: 0 2.2rem 0 0;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .box-div p {
+        font-size: 14px !important;
+      }
+
+      .section-5 > .wor > .p-5 {
+        padding: 3rem !important;
+      }
+
+      .O1 {
+        order: 2;
+      }
+
+      .O2 {
+        order: 1;
+      }
+
+      /* .btn_2 { width: 40% !important; } */
+      .pl-0,
+      .pr-0 {
+        padding: 1.5rem !important;
+      }
+
+      .ac {
+        align-items: center;
+      }
+
+      .acura_banner_sec_lft {
+        transform: initial;
+        position: initial;
+        background: #000;
+        order: 1;
+        text-align: center;
+        padding: 20px 0 0;
+        margin-bottom: -1px;
+      }
+
+      .acura_banner_sec_imgs {
+        order: 2;
+      }
+
+      .acura_banner_sec_imgs_cnt {
+        background: #000;
+        position: initial;
+        text-align: center;
+        padding: 10px;
+        margin: -1px 0;
+      }
+
+      .acura_banner_sec_imgs_cnt h5 {
+        margin-bottom: 0;
+      }
+
+      .acura_banner_sec_imgs_cnt2 {
+        background: #000;
+        position: initial;
+        text-align: center;
+        padding: 10px;
+        margin-top: -1px;
+      }
+
+      .acura_banner_sec_lft .start_prc {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .acura_banner_sec_imgs_cnt h5 {
+        font-size: calc(0.3em + 1vw);
+      }
+
+      .acura_banner_sec_lft h1 {
+        font-size: calc(1.5em + 1vw);
+      }
+
+      .acura_banner_sec_imgs_cnt2 h5 {
+        font-size: calc(0.3em + 1vw);
+      }
+
+      .butn {
+        background: #e6231e;
+        color: #fff;
+        width: 45%;
+      }
+
+      .d-flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .d-flex-row {
+        flex-direction: row !important;
+        justify-content: center;
+      }
+
+      .performance-section > .wor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .col-lg-4 {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      .col-sm-4 {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      .col-md-6 {
+        flex: initial;
+        width: 50%;
+      }
+
+      .text-right {
+        text-align: center;
+      }
+
+      .text-left {
+        text-align: center;
+      }
+
+      /* .box-div {
+        background: #FAFAFA;
+        padding: 25px;
+        height: auto;
+        margin: 0 0.7rem 25px;
+    } */
+
+      .box-div {
+        background: #fafafa;
+        padding: 25px;
+        height: auto;
+        margin: 0 0.7rem 25px;
+        height: auto !important;
+      }
+
+      .s10 {
+        width: calc(100% / 2) !important;
+        padding: 17px;
+      }
+
+      .Crgo > .col-sm-4:first-child,
+      .Crgo > .col-sm-4:nth-child(4) {
+        padding-left: 1rem !important;
+      }
+
+      .Crgo > .col-sm-4:nth-child(3),
+      .Crgo > .col-sm-4:nth-child(6) {
+        padding-right: 1rem !important;
+      }
+
+      .Crgo > .col-sm-4 {
+        flex: 0 0 auto;
+        width: 50%;
+      }
+
+      .Card_1 {
+        /* background: #FAFAFA; */
+        width: 100%;
+        max-width: 100%;
+        width: calc(100% / 2) !important;
+        padding: 17px;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+
+      .Card_3 {
+        /* background: #FAFAFA; */
+        width: 100%;
+        max-width: 100%;
+        width: calc(100% / 2) !important;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+
+      .box-div > img {
+        width: 19%;
+        max-width: 100%;
+      }
+
+      .btn {
+        width: 45%;
+        margin: 0% auto;
+      }
+
+      .BN > .btn {
+        width: 47%;
+        margin: 0 auto;
+      }
+
+      /* .Card_2 { background-color: #fff; color: #000; width: 100%; width: calc(75.4%/3); gap: 4rem; margin: 17px; gap: 0 !important; } */
+      .Card_2 {
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        width: calc(86.4% / 3);
+        /* gap: 4rem; */
+        margin: 5px;
+        gap: 0 !important;
+      }
+
+      .Card_2 > h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+
+      .mrp .Card_2 img {
+        padding-top: 25px;
+        height: calc(100% - 155px) !important;
+      }
+
+      .col-sm-7 {
+        flex: initial;
+        width: 100% !important;
+      }
+
+      .Card_3:first-child,
+      .Card_3:nth-child(5) {
+        padding-left: 1rem !important;
+      }
+
+      .Card_3:nth-child(4),
+      .Card_3:nth-child(8) {
+        padding-right: 1rem !important;
+      }
+
+      .boxl-0 {
+        padding-left: 0.6rem !important;
+      }
+
+      .boxr-0 {
+        padding-right: 0.6rem !important;
+      }
+
+      .mrp .Card_2 h4 {
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+
+      .mrp > .gap-6 {
+        gap: 1rem !important;
+      }
+    }
+
+    @media screen and (max-width: 740px) {
+      /* .box-div {
+        background: #FAFAFA;
+        padding: 25px;
+        height: auto;
+        margin: 0 0.7rem 25px;
+        height: 443px;
+    } */
+
+      .box-div {
+        background: #fafafa;
+        padding: 25px;
+        height: auto !important;
+        margin: 0 0.7rem 25px;
+      }
+
+      .Card_2 {
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        width: calc(87.4% / 2) !important;
+        /* gap: 4rem; */
+        margin: 5px;
+        gap: 0 !important;
+      }
+    }
+
+    @media screen and (max-width: 660px) {
+      .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: cyan;
+        color: black;
+      }
+
+      .box-div p {
+        height: auto !important;
+      }
+
+      .btn {
+        width: 48% !important;
+        margin: 0 auto 2% !important;
+      }
+
+      .box-div p {
+        max-width: 400px;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 10px;
+        height: 240px;
+      }
+
+      .box-div {
+        height: auto;
+      }
+
+      .new > .col-lg-4 {
+        flex: 0 0 auto;
+        width: calc(100% / 1);
+        padding: 17px;
+      }
+
+      .d-flex-row {
+        flex-direction: column;
+      }
+
+      .re {
+        flex-direction: column !important;
+      }
+
+      .new > .col-lg-4 {
+        flex: 0 0 auto;
+        width: calc(100% / 1);
+        padding: 17px 0;
+      }
+
+      .boxl-0 {
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+      }
+
+      .boxr-0 {
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+      }
+    }
+
+    /* For Mobile Phones Portrait or Landscape View */
+    @media screen and (max-width: 640px) {
+      .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: chartreuse;
+        color: black;
+      }
+
+      .butn {
+        background: #e6231e;
+        color: #fff;
+        width: 100%;
+      }
+
+      .d-flex {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+      }
+
+      .s10 {
+        width: 100%;
+        padding: 20px !important;
+      }
+
+      .btn {
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 592px) {
+      .Card_2 > h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    @media screen and (max-width: 507px) {
+      .Card_2 {
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        width: calc(128.4% / 1);
+        /* gap: 4rem; */
+        margin: 5px;
+        gap: 0 !important;
+      }
+    }
+
+    @media screen and (max-width: 494px) {
+      .Card_2 {
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        width: calc(128.4% / 1);
+        /* gap: 4rem; */
+        margin: 5px;
+        gap: 0 !important;
+      }
+    }
+
+    /* For Mobile Portrait View */
+    @media screen and (max-width: 480px) {
+      .btn {
+        width: 45%;
+      }
+
+      .new > .col-lg-4 {
+        flex: 0 0 auto;
+        width: calc(100% / 1);
+        padding: 17px;
+      }
+
+      .Crgo > .col-sm-4 {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      .col-md-6 {
+        flex: initial;
+        width: 100%;
+      }
+
+      .s10 {
+        width: calc(100% / 1) !important;
+        padding: 17px;
+      }
+
+      .Card_3 {
+        width: calc(100% / 1) !important;
+      }
+
+      .Card_1 {
+        width: calc(100% / 1) !important;
+      }
+
+      .Card_2 {
+        width: calc(85% / 2);
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .BN {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: wrap;
+      }
+
+      .BN > .btn {
+        width: 80% !important;
+        margin: 0 auto;
+        font-size: 0.9rem;
+      }
+
+      .tbl > ul > li {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .Crgo > .col-sm-4 {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      .col-md-6 {
+        flex: initial;
+        width: 100%;
+      }
+
+      .Card_3 {
+        width: calc(100% / 1) !important;
+      }
+
+      .Card_1 {
+        width: calc(100% / 1) !important;
+      }
+
+      .mrp .Card_2 img {
+        height: auto !important;
+      }
+
+      .mrp .Card_2 h4 {
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+      }
+
+      .Card_2 > p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      .Card_2 > h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .seo > .inner-div {
+        max-width: 88%;
+        margin: 0 auto;
+      }
+    }
+
+    @media screen and (max-width: 377px) {
+      .Card_2 {
+        width: calc(82% / 1);
+      }
+
+      .mrp .Card_2 h4 {
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 35px;
+      }
+
+      .Card_2 > p {
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+      }
+    }
+
+    /* For iPhone 4 Portrait or Landscape View */
+    @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+      .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: brown;
+        color: black;
+      }
+
+      .btn {
+        width: 66%;
+        margin: 0 auto;
+      }
+    }
+
+    /* For iPhone 5 Portrait or Landscape View */
+    @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+      .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: cornflowerblue;
+        color: black;
+      }
+
+      .butn_2 {
+        background: #004687;
+        color: #fff;
+        /* font-size: calc(.1em + 1vw); */
+        font-size: 1.5em;
+        width: 30%;
+        margin: 0% auto;
+        text-align: center;
+        padding: 15px 0px;
+      }
+
+      .btn {
+        width: 45%;
+      }
+    }
+
+    /* For iPhone 6 and 6 plus Portrait or Landscape View */
+    @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+      .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: darkgoldenrod;
+        color: black;
+      }
+
+      .butn_2 {
+        background: #004687;
+        color: #fff;
+        /* font-size: calc(.1em + 1vw); */
+        font-size: 1.5em;
+        width: 30%;
+        margin: 0% auto;
+        text-align: center;
+        padding: 15px 0px;
+      }
+
+      .btn {
+        width: 45%;
+      }
+    }
+  </style>
+
+  <style>
+    .cen-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 4rem 0.3rem 2rem 0.3rem;
+    }
+
+    .mp0 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .p-u {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: #0d5db3;
+      font-weight: 600;
+    }
+
+    .el-cen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .disf-c {
+      display: flex;
+      /* justify-content: space-evenly; */
+      flex-direction: column;
+    }
+
+    .disf {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2.5rem; margin-bottom: 2rem; background-color: white
+      /* gap: 1rem; */
+    }
+
+    .disf0 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 1.2rem;
+    }
+
+    .disf2 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 2rem; background-color: white;
+      
+    }
+
+    .disf3 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 2rem; background-color: white;
+      padding: 0 2rem;
+    }
+
+    .padm {
+      padding: 6.5rem 2rem 4rem 2rem;
+    }
+
+    .pman {
+      padding-right: 2rem;
+    }
+
+    .cen-t {
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 1rem 0;
+      padding-top: 0;
+    }
+
+    .rowm {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .f1 {
+      flex: 1;
+    }
+
+    h2 {
+      font-weight: 900;
+      text-transform: uppercase;
+      /* text-align: center; */
+    }
+
+    /* .rev p {
+      margin-right: 2rem;
+    } */
+
+    .cen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+    }
+
+    @media screen and (max-width: 600px) {
+      .colm-20 {
+        width: 90%;
+      }
+      .colm-30 {
+        width: 100%;
+      }
+      .colm-75 {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .disf{
+        padding: 0 0 2rem 0;
+        /* margin-right: 1rem; */
+      }
+
+      
+    }
+
+    .demo {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 0.2mm solid rgba(128, 128, 128, 0.2);
+    }
+
+    .lag {
+      position: relative;
+      top: -2rem;
+      /* margin-bottom: -0rem; */
+    }
+
+    .sp {
+      font-size: 23px;
+      color: #565656;
+      font-weight: 600;
+    }
+    .pr {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+
+    .tl{
+      font-size: 3.2rem;
+      /* font-weight: 200; */
+    }
+
+    .blue{
+      width: 45%;
+      background-color: #0d5db3;
+      align-items: start;
+      padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .tsm{
+      font-size: 20px ;
+      line-height: 1.7rem;
+      word-spacing: 2px;
+    }
+
+    .tsmd{
+      font-size: 21px;
+    }
+
+    .par{
+      font-size: 20px;
+      font-weight: 900;
+      margin-top: 12px;
+
+    }
+
+    .rowm h2{
+      text-align: center;
+    }
+
+    .rev .cen p{
+      padding-right: 2rem;
+    }
+    @media screen and (max-width : 1100px) and (min-width : 800px) {
+      .f1 .tsm{
+        font-size: 16px;
+        line-height: 1rem;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .colm {
+        flex: 1;
+      }
+
+      .colm-75 {
+        width: 8.5%;
+      }
+      .colm-1 {
+        width: 12.5%;
+      }
+
+      .colm-20 {
+        width: 22%;
+      }
+
+      .colm-30 {
+        width: 30%;
+        margin-bottom: 2.3rem;
+      }
+      .colm-2 {
+        width: 25%;
+      }
+      .colm-3 {
+        width: 37.5%;
+      }
+      .colm-4 {
+        width: 50%;
+      }
+      .colm-5 {
+        width: 62.5%;
+      }
+      .colm-6 {
+        width: 75%;
+      }
+      .colm-7 {
+        width: 87.5%;
+      }
+      .colm-8 {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .disf {
+        flex-direction: column;
+      }
+
+      .disf0 {
+        flex-direction: column;
+      }
+      .disf2 {
+        flex-direction: column;
+      }
+      .disf3 {
+        flex-direction: column;
+      }
+
+      .padm {
+        padding: 6.5rem 2rem 4rem 2rem;
+      }
+
+      .pman {
+        padding: 0;
+      }
+
+      .rev {
+        flex-direction: column-reverse;
+      }
+
+      .blue{
+        padding-right: 2rem;
+        width: 100%;
+      }
+
+      .f1 .tsm{
+        padding: 0;
+      }
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .demo {
+        margin: 2rem;
+      }
+      .tl{
+        font-size: 2rem;
+      }
+      .p-u{
+        font-size: 1rem;
+      }
+      .tsm{
+        font-size: 16px;
+        line-height: 1.3rem;
+      }
+
+      .tsmd{
+        font-size: 17px;
+      }
+
+      .cen{
+        padding-right: 2rem;
+      }
+
+      .rev .cen p{
+      padding-right: 0;
+    }
+    }
+
+    h2{
+      font-weight: 600;
+    }
+    
+  </style>
+
+  <body style="margin: 0">
+    <div class="main-div mp0">
+      <!-- top banner -->
+      <div class="acura_banner_sec mp0">
+        <div class="acura_banner_sec_imgs">
+          <figure class="main_img">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1883/4ed7d5abbae8b231db61ec1bbbe835d8x.jpg"
+              alt="banner"
+            />
+          </figure>
+          <div class="acura_banner_sec_imgs_cnt2">
+            <h5>
+              290-HP* | 3.5L V-6 Engine* <br />355-HP*| 3.0L TURBO V-6 (Type S)
+            </h5>
+          </div>
+        </div>
+        <div class="acura_banner_sec_lft">
+          <h1>2024 MDX</h1>
+          <h3 style="margin: 0;">Premium Performance SUV</h3>
+          <span class="start_prc">Starting at $49,850*</span>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div
+        class="d-flex BN justify-content-evenly py-5 px-3 px-6 bgblack pb-4"
+        style="position: relative; top: -1px; margin-bottom: -1"
+      >
+        <a
+          class="btn butn py-4 mb-4"
+          href="https://www.hananiaacuraoforangepark.com/new-inventory/index.htm"
+        >
+          <div>VIEW INVENTORY</div>
+        </a>
+        <a
+          class="btn butn py-4 mb-4"
+          href="https://www.hananiaacuraoforangepark.com/tools/tradepending/whats-my-buying-power.htm"
+        >
+          <div>GET A QUOTE</div>
+        </a>
+        <a
+          class="btn butn py-4 mb-4"
+          href="https://www.hananiaacuraoforangepark.com/tools/tradepending/value-your-trade.htm"
+        >
+          <div>VALUE YOUR TRADE</div>
+        </a>
+        <a class="btn butn py-4 mb-4" href="https://www.hananiaacuraoforangepark.com/value-my-trade-in.htm">
+          <div>GET PRE-APPROVED</div>
+        </a>
+      </div>
+
+      <!-- performence max -->
+      <div class="cen-col">
+        <p class="mp0 p-u">PerformancE</p>
+        <p class="mp0 tl" >MDX Powertrains</p>
+      </div>
+
+      <div class="section-2">
+        <div class="">
+          <div class="d-flex justify-content-between flex-wrap ac">
+            <div class="s2 per el-cen mp0">
+              <div>
+                <p>FWD</p>
+                <p class="tsm">
+                  A 290-HP* V-6 mated to a quick shifting 10-speed automatic
+                  transmission delivers aggressive power and acceleration. Race
+                  through the gears with paddle shifters for a sportier drive.
+                  With up to 3,500 lbs. of towing*, the 2024 MDX ambitiously
+                  takes on any adventure.
+                </p>
+                <p class="tsmd">
+                  19 MPG RATING CITY / 26 MPG RATING HWY / 22 MPG RATING
+                  COMBINED*
+                </p>
+              </div>
+            </div>
+            <div class="s2">
+              <img
+                src="https://s3.amazonaws.com/fzautomotive/dealers/64ac5deb2a795.jpg"
+                alt="FWD"
+              />
+            </div>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap ac">
+            <div class="s2 text-center O1">
+              <img
+                src="https://s3.amazonaws.com/fzautomotive/dealers/64ace89c0cbfa.jpg"
+                alt="FWD"
+              />
+            </div>
+            <div class="s2 sec2 per O2 el-cen">
+              <div>
+                <p>SH-AWD</p>
+                <p class="tsm">
+                  Rear-biased Super Handling All-Wheel Drive™ gives you
+                  precision control of your MDX by sending power to all four
+                  wheels. A 10-speed automatic transmission and paddle shifters
+                  keep you in the torque band for power on demand. With a max
+                  towing capability of up to 5,000 lbs.*, the MDX is engineered
+                  to perform no matter the challenge.
+                </p>
+                <p  class="tsmd">
+                  19 MPG RATING CITY / 25 MPG RATING HWY / 21 MPG RATING
+                  COMBINED*
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap ac">
+            <div class="s2 per el-cen">
+              <div>
+                <p>TYPE S</p>
+                <p class="tsm">
+                  Feel your adrenaline rush as the twin scroll turbochargers of
+                  the MDX Type S 3.0L turbo V-6 engine release 355-HP*.
+                  Engineered from motorsports DNA, the rear-biased SH-AWD
+                  combined with the steering wheel-mounted sport paddle shifters
+                  put the driver in command of the road.
+                </p>
+                <p class="tsmd">
+                  17 MPG RATING CITY / 21 MPG RATING HWY / 19 MPG RATING
+                  COMBINED*
+                </p>
+              </div>
+            </div>
+            <div class="s2 text-center">
+              <img
+                src="https://s3.amazonaws.com/fzautomotive/dealers/64ace8906fe3b.jpg"
+                alt="FWD"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power packed precis -->
+      <div style="color: white; ">
+        <div class="cen-col blue">
+          <p class="mp0 p-u" style="color: white">PerformancE</p>
+          <p class="mp0 tl">MDX Powertrains</p>
+        </div>
+      </div>
+
+      <!-- handling -->
+      <div
+        class="disf-c padm"
+        style="
+          background-color: #0d5db30d;
+          position: relative;
+          top: -4rem;
+          margin-bottom: -4rem;
+        "
+      >
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0729/c84ba3d12d6fe46479d15490e9255582x.jpg"
+              alt=""
+            />
+            <h2>Handling</h2>
+            <p>
+              The double-wishbone front suspension keeps your MDX glued to the
+              ground with larger and wider wheels for highly responsive handling
+              even when pushed to the limit.
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0093/b70dee163c6ca0ebf6422067a4f67c67x.jpg"
+              alt=""
+            />
+            <h2>chassis</h2>
+            <p>
+              An ultra-rigid chassis and longer wheelbase work in tandem to
+              create a more comfortable ride by reducing vibration and ambient
+              noise. The chassis also improves handling response and performance
+              for a superior drive.
+            </p>
+          </div>
+        </div>
+
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0765/292b9796ccf5a759f3f403e688eaad0cx.jpg"
+              alt=""
+            />
+            <h2>Steering</h2>
+            <p>
+              For a connected driving experience, variable ratio steering delivers precision control. A tuned electric power steering booster delivers agile handling for superior maneuverability. Firm up the steering by switching to Sport mode for a more dynamic driving experience.
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1770/f1707b6da153cb505b98dddbbcf38286x.jpg"
+              alt=""
+            />
+            <h2>Type S</h2>
+            <p>
+              The first SUV with the Type S badge, the MDX Type S brings new levels of performance to your everyday drive. Large Brembo® front brake calipers featuring upsized rotors paired with NSX-inspired Electro-Servo brakes deliver confident braking, while the dynamic air suspension lowers or raises ride height for extra ground clearance when needed. Quad exhaust outlets symbolize the ultimate combination of Type S power, performance, and style.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- integrated dynamic system -->
+      <div class="cen-col">
+        <p class="mp0 p-u" style="">PERFORMANCE</p>
+        <p class="mp0 tl">Integrated Dynamics System</p>
+        <p class="par">Select from seven unique driving modes, for unrivaled personalized performance.
+        </p>
+      </div>
+
+      <!-- 3 image ko ek saath -->
+      <div class="disf-c" style="background-color: white">
+        <div class="disf2" style=" padding-top:1rem ; margin: 0 2rem">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0094/d1336acecbc763c85cac11253e53be1ax.jpg"
+              alt=""
+            />
+            <h2>Snow</h2>
+            <p>
+              Snow Mode helps maintain traction and confidence by adjusting the amount of power going to each wheel so you’re ready when winter arrives.
+            </p>
+          </div>
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1266/8bcb5b3ccbd02d6403ec391b57b283ecx.jpg"
+              alt=""
+            />
+            <h2>Comfort</h2>
+            <p>
+              Easier steering inputs and a reduced engine note make Comfort Mode a smooth ride with exceptional handling and satisfying efficiency.
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0085/9a0082e67bc31c8104b601a6eaf31affx.jpg"
+              alt=""
+            />
+            <h2>Normal</h2>
+            <p>
+              Find the perfect balance of a comfortable ride, agile handling, and throttle responsiveness for your daily drive.
+            </p>
+          </div>
+        </div>
+
+        <div class="disf" style=" padding: 1rem 0 4rem 0; margin: 0 2rem">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0958/e03c7c03d14149465234cbc4b194d7e3x.jpg"
+              alt=""
+            />
+            <h2>Sport</h2>
+            <p>
+              Unleash the full performance of the MDX in Sport Mode. Experience a sportier engine sound, and increased steering feedback and torque vectoring with available Super Handling All-Wheel Drive™.
+            </p>
+          </div>
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1494/f98c8c647966774bcd8d62e5f93c559cx.jpg"
+              alt=""
+            />
+            <h2>Sport+*</h2>
+            <p>
+              Dare to heighten the excitement with Sport+ mode, exclusive to Type S. Firmer dampers, quicker throttle response and lower ride height at higher speeds maximize performance for every ride.*Exclusive mode
+for Type S
+
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1669/95b5ea15a1c93d60a5719ad59077ea45x.jpg"
+              alt=""
+            />
+            <h2>Lift*</h2>
+            <p>
+              A first for Acura, the dynamic on-demand Lift mode available with Type S offers more ground clearance for extreme on-road conditions. Whether you’re navigating through sand or snow, an additional 50mm of height makes all the difference.*Exclusive mode for Type S
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- inventry -->
+      <div class="butn_div px-6">
+        <a href="https://www.hananiaacuraoforangepark.com/new-inventory/index.htm">
+          <div class="btn_2 butn py-3 mx-auto">VIEW INVENTORY</div>
+        </a>
+      </div>
+
+      <!-- ek or hawa wala -->
+      <div style="color: white; ; margin-top: 2.5rem">
+        <div
+          class="cen-col  blue">
+          <p class="mp0 p-u" style="color: white">Exterior</p>
+          <p class="mp0 tl">Commanding Style</p>
+        </div>
+      </div>
+
+      <!-- chalao bhai ise dekhte -->
+      <div
+        class="disf-c padm"
+        style="
+          background-color: #0d5db30d;
+          position: relative;
+          top: -4rem;
+          margin-bottom: -4rem;
+        "
+      >
+        <!-- start -->
+        <div
+          class="disf"
+        >
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1272/dc57b4025f6b3eca425ee9a1beabb176x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Driven Design</h2>
+            <p class="mp0 tsm">
+              A longer body and tapering cabin create a powerful stance while
+              increasing interior space. The Chicane™ LED daytime running lights
+              flow into the pronounced beltline that follows through to the
+              rear, giving the exterior a sense of dynamic motion.
+            </p>
+          </div>
+        </div>
+        <div
+          class="disf rev"
+        >
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>LED Lighting</h2>
+            <p class="mp0 tsm">
+              Jewel Eye® LED headlights and Chicane™ LED taillights illuminate the sculpted style of the MDX. The 3D light blade of the Chicane taillights adds dramatic depth to the modern precision design of
+the exterior.
+
+            </p>
+          </div>
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1063/cbbe09cdd99406937fe2e2b20dd70e90x.jpg"
+              alt="fgh"
+            />
+          </div>
+        </div>
+        <div
+          class="disf"
+        >
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0353/e1b8535dc95de7034ebb60e42e72c09ax.jpg"
+              alt=""
+            />
+          </div>
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>A-Spec® Styling</h2>
+            <p class="mp0 tsm">
+              Styled for pure performance, the A-Spec® package features gloss black accents, 20-in Shark Gray wheels, and LED fog lights. The elevated aggressive design continues inside with a flat-bottom steering wheel, metal paddle shifters, and metal sport pedals for the ultimate driver-centric cockpit.
+            </p>
+          </div>
+        </div>
+        <div
+          class="disf rev"
+        >
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Premium Paint Technology</h2>
+            <p class="mp0 tsm">
+              Intensify your MDX with a premium paint finish in Performance Red Pearl, Liquid Carbon Metallic, Majestic Black Pearl, Platinum White Pearl, Phantom Violet Pearl, the exclusive Apex Blue Pearl or Tiger Eye Pearl. This durable pigment is applied in a series of tinted clear coats for brilliant chromatic color that has a deep, rich finish.
+            </p>
+          </div>
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1550/61e78f5ff9a4270fd55236c19dce5203x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="disf" style="background-color: white">
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1594/bbcc18ec4fb51af75fbc3b9ad65deb66x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Type S</h2>
+            <p class="mp0 tsm">
+              Make a statement every time you hit the road in the MDX Type S. The aggressive quad exhaust outlets and rear diffuser will leave a lasting impression long after you’re gone, while exclusive front fascia and Type S badging highlight its performance-focused design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- commanding style -->
+
+      <!-- MDX wheel -->
+      <div class="cen-col ">
+        <p class="mp0 p-u" style="">EXTERIOR</p>
+        <p class="mp0 tl" >MDX Wheels</p>
+        <p>
+          Each MDX features an exclusive performance-focused wheel design. Tailor your MDX further with Acura Genuine Accessory wheels.
+        </p>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1922/68099b737e94c51e88fc1db034fa068fx.jpg"
+            alt=""
+          />
+          <h2>21-in Berlina Black w/Machine-Finish</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1808/744d1cc66790178013b0490419ad9af7x.jpg"
+            alt=""
+          />
+          <h2>21-in Shark Gray</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0146/723b5788e314f3688e3f73cc9223789ex.jpg"
+            alt=""
+          />
+          <h2>20-in Premium Silver</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0598/73be411e2174c5bfe7405985366b5223x.jpg"
+            alt=""
+          />
+          <h2>20-in Shark Gray</h2>
+        </div>
+      </div>
+
+      <div class="rowm" style="padding-bottom: 2rem;">
+        <div class="colm-75"></div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1650/be237c870d406a4e6df00f7ce872952cx.jpg"
+            alt=""
+          />
+          <h2>220-in Shark Gray w/Machine-Finish</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1153/62186ee4b077b947d217fb25d770ff15x.jpg"
+            alt=""
+          />
+          <h2>20-in Glint Black Accessory
+          </h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1083/d273cb05ae38b0d6e1d3782d8d8f2e98x.jpg"
+            alt=""
+          />
+          <h2>19-in silver</h2>
+        </div>
+        <div class="colm-75"></div>
+      </div>
+
+      <!-- get a Quid -->
+      <div class="butn_div px-6">
+        <a href="https://www.hananiaacuraoforangepark.com/tools/tradepending/whats-my-buying-power.htm">
+          <div class="btn_2 butn py-3 mx-auto">GET A QUOTE</div>
+        </a>
+      </div>
+
+      <!-- Gallery -->
+      <div style=" background-color: white">
+        <div class="cen-col " style="padding-bottom: 4rem;">
+          <p class="mp0 p-u">EXTERIOR</p>
+          <p class="mp0 tl" >Gallery</p>
+        </div>
+
+        <div class="rowm">
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0211/e6a51c5780288b628937da8a614942e1x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1575/d190444b647a51a5e37d9855b4133e6fx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1323/30ca84532f05494356bc9b2f0cf7d66ex.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0938/e90480bd9056ea914c51ff4dbd35a51cx.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="rowm"
+          style="position: relative; top: -5.5px; margin-bottom: -5.5px"
+        >
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1836/d7c5f23029b23c88c67562381191e350x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0442/577fc4796d535d2133eaa4d4aa511e5bx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0962/9f4bb1d2a21a145ae2ea45a2df84240ax.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1539/e2d05c58f706abc0f0994c38b17ae30fx.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- interiar and comfort -->
+      <!-- ek or hawa wala -->
+      <div style="color: white; ; margin-top: 2.5rem">
+        <div
+          class="cen-col blue">
+          <p class="mp0 p-u" style="color: white">INTERIOR & COMFORT</p>
+          <p class="mp0 tl">Precision Crafted</p>
+        </div>
+      </div>
+
+      <div
+        class="disf-c padm"
+        style="
+          background-color: #0d5db30d;
+          position: relative;
+          top: -4rem;
+          margin-bottom: -4rem;
+        "
+      >
+        <!-- start -->
+        <div
+          class="disf"
+        >
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0510/b719149cdeae19539d037d3c808238d8x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Premium Design</h2>
+            <p class="mp0 tsm">
+              For those who are truly driven, the MDX is ready with an ultra-refined, technologically advanced cabin. The digital Precision Cockpit™ puts all your driving information front and center in brilliant HD. Be immersed in a bespoke atmosphere with the available Iconic Drive™ Ambient Cabin Lighting and premium leather-trimmed interior.
+            </p>
+          </div>
+        </div>
+        <div
+          class="disf rev"
+        >
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Authentic Materials
+            </h2>
+            <p class="mp0 tsm">
+              The cabin is rich with high-grade authentic materials. Available open-pore wood accents and a hand-wrapped leather dash with French stitching emphasizes the premium craftsmanship of the MDX.
+            </p>
+          </div>
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0694/7c02f68e0d28bce70a455b2a5fda6c87x.jpg"
+              alt="fgh"
+            />
+          </div>
+        </div>
+        <div
+          class="disf"
+        >
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1273/f200726fdae4cee6eb027a87a76beddcx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Panoramic Moonroof</h2>
+            <p class="mp0 tsm">
+              Enjoy an expansive view with the wide panoramic moonroof. Use CabinControl to operate the moonroof shade and create the perfect lighting and climate inside your MDX.
+            </p>
+          </div>
+        </div>
+        <div
+          class="disf rev"
+        >
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Three-Row Seating</h2>
+            <p class="mp0 tsm">
+              High-end craftmanship extends to every row with seating for up to 7 and adjustable configurations. The removable 2nd-row center seat also offers easy access to the 3rd row. Available full-grain leather and authentic open-pore wood trim welcome everyone to a first-class experience.
+            </p>
+          </div>
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1662/4f71859eab0c3dac6b68b51b74200cb0x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="disf" style="background-color: white">
+          <div class="f1">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1526/b3c7712ad303ab54bbfc64ffe7de2bb9x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="f1 cen" style="padding-left: 2rem">
+            <h2>Type S Design Details</h2>
+            <p class="mp0 tsm">
+              Experience supreme levels of refinement with available 16-way power front seats with 9 massage modes. Premium Orchid and Azurite Blue leather seating choices offer high-class comfort and available distinctive dark wood trim surrounds you with sophistication.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cargo -->
+      <div class="cen-col">
+        <p class="mp0 p-u" style="">CARGO</p>
+        <p class="mp0 tl">Intelligent Versatility</p>
+        <p style="text-align: center; margin-top: 1rem;">
+          The MDX features a max cargo capacity of 95 cu. ft.* with all rows folded flat. Hidden cargo storage that has a reversible smart lid with a plastic side allows for easy cleaning and storing dirty items. Stow the smart lid to increase capacity for bulkier items like a stroller even with all three rows up.
+        </p>
+      </div>
+      <!-- # image no content -->
+      <div class="disf-c" style="margin-bottom: 3rem; background-color: white">
+        <div class="disf3">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0678/54e1cc97f5f839ccb536b7d5a7769e3cx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1582/4cf36387ee760b0c90a62cf402789e55x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1603/b7ba4277dfb951ff8d94fef78cf81fbfx.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="disf3">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1599/d2b2ad7643d3a29455ae4f65eed7d949x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1602/29c20745a6c1acb91dcf028fb6305dbbx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1064/3e3a5ef6a266617ab5c78ce6af6cc002x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- VALUE YOUR TRADE -->
+      <div class="butn_div px-6">
+        <a href="https://www.hananiaacuraoforangepark.com/tools/tradepending/value-your-trade.htm">
+          <div class="btn_2 butn py-3 mx-auto">VALUE YOUR TRADE</div>
+        </a>
+      </div>
+
+      <!-- Gallery -->
+      <div style="padding-bottom: 2.5rem; background-color: white">
+        <div class="cen-col" style="padding-bottom: 4rem;">
+          <p class="mp0 p-u" style="">interiar</p>
+          <p class="mp0" style="font-size: 3.2rem">Gallery</p>
+        </div>
+
+        <div class="rowm">
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1569/38d0e456faf593bb48a163b4a6c2d43cx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0064/168623745e6ee70aa667fee0399e4250x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1930/756522f91b5e8e1cdb565815fcc5e78dx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1739/52d678fe1bf3abe9d5e91fc799dd21bdx.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="rowm"
+          style="position: relative; top: -5.5px; margin-bottom: -5.5px"
+        >
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1115/5de30447553b4245c01ab924a48a6b48x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1271/28975a24bfe1696f517d2f8a5d864260x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1963/b868c28fdcb43153d075cfa80c6352ffx.jpg"
+              alt=""
+            />
+          </div>
+          <div class="colm">
+            <img
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1602/4e19c2074cd686b29f61ac5f2ff1f1e7x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio and connectvity -->
+      <!-- Power packed precis -->
+      <div style="color: white; ">
+        <div
+          class="cen-col blue">
+          <p class="mp0 p-u" style="color: white">AUDIO & CONNECTIVITY</p>
+          <p class="mp0 tl">At Your Command</p>
+        </div>
+      </div>
+
+      <!-- handling -->
+      <div
+        class="disf-c padm"
+        style="
+          padding-bottom: 8rem;
+          background-color: #0d5db30d;
+          position: relative;
+          top: -4rem;
+          margin-bottom: -8rem;
+        "
+      >
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1314/45c3ba7621ae63417dddb25efc4cf30ax.jpg"
+              alt=""
+            />
+            <h2>HD Center Display</h2>
+            <p>
+              Flowing naturally with the dashboard, the 12.3-in HD Center Display is the widest screen ever to be featured in an Acura. The multi-view rear camera, music, and available navigation are displayed with brilliant clarity and are easily controlled via the True Touchpad Interface™.
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0509/5255493b4f8305a8fee26754a3cd456fx.jpg"
+              alt=""
+            />
+            <h2>Apple CarPlay® Integration</h2>
+            <p>
+              Stay connected through wireless Apple CarPlay®* Integration. Easily access music, texts, and navigation on the 12.3-inch HD center display. Enjoy effortless control through the True Touchpad Interface™ and Siri® Eyes Free.
+            </p>
+          </div>
+        </div>
+
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1999/22d422b5513d06caece7b35dd3f76e71x.jpg"
+              alt=""
+            />
+            <h2>Android Auto™ Integration</h2>
+            <p>
+              Stay connected to your MDX through wireless Android Auto™* Integration. Access music, texts and navigation with the 12.3-inch full HD center display. Enjoy effortless control through the True Touchpad Interface™ and the convenience of Google Assistant at the press of a button.
+
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0834/78e7c0a8d845b34dde8c462841f5a669x.jpg"
+              alt=""
+            />
+            <h2>Alexa Built-In</h2>
+            <p>
+              Alexa* seamlessly connects you to your MDX. Through voice activation, easily control music, use navigation, check the weather, search the internet, and connect to smart home devices by simply saying “Alexa”.
+            </p>
+          </div>
+        </div>
+
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1781/d5b8e1b85302d1cba7a24e0acb5287ccx.jpg"
+              alt=""
+            />
+            <h2>ELS STUDIO 3D® Signature Edition</h2>
+            <p>
+              Elevate your sound experience with 25 speakers and over 1000 watts. Developed by eight-time Grammy® award-winning producer and engineer Elliott Scheiner, the available ELS STUDIO 3D®* Signature Edition fully immerses you in the music with high-fidelity carbon speakers, including six Highline™ overhead speakers, doubling sound clarity and adding life to vocals and instruments.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- connected to you -->
+      <div style="color: white; z-index: 2;">
+        <div
+          class="cen-col blue">
+          <p class="mp0 p-u" style="color: white">AUDIO & CONNECTIVITY</p>
+          <p class="mp0 tl">Connected To You</p>
+        </div>
+      </div>
+
+      <!-- handling -->
+      <div
+        class="disf-c padm"
+        style="
+        padding-top: 2rem;
+          background-color: white;
+          position: relative;
+          /* top: -4rem; */
+          /* margin-bottom: -4rem; */
+        "
+      >
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0606/d02aae1f3c1387325878fc9fdbc5e4e6x.jpg"
+              alt=""
+            />
+            <h2>AcuraLink® Connected Services
+            </h2>
+            <p>
+              AcuraLink®* helps you stay connected to your Acura through your smart phone. Enjoy convenient features like Remote Start, Find My Car, Automatic Collision Notification, and Enhanced Roadside Service during your three-year complimentary trial.
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0114/b5c4c5bdd3326a291a75e4833b0ee89ax.jpg"
+              alt=""
+            />
+            <h2>Precision Cockpit™</h2>
+            <p>
+              The 12.3-in Precision Cockpit™ is configurable for a personalized digital experience. Select the layout to best fit your drive and view the advanced driver assistive system alerts displayed right in front of you. The MDX Type S welcomes you in style with an exclusive and modern start up sequence when you press the start button.
+            </p>
+          </div>
+        </div>
+
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0702/80acd51af4218b6e053d0970c2a33408x.jpg"
+              alt=""
+            />
+            <h2>Head-Up Display</h2>
+            <p>
+              Engineered to keep you focused on the drive, the MDX projects critical information front and center with the 10.5-in Head-Up Display. Information like your speed, AcuraWatch® alerts, turn-by-turn navigation, and music are projected on the windshield.
+            </p>
+          </div>
+          <div class="s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0017/299d7f9fa72ff4932036287e8975f771x.jpg"
+              alt=""
+            />
+            <h2>Wi-Fi Hotspot Capability</h2>
+            <p>
+              Stay connected with Wi-Fi Hotspot Capability* and enjoy over the air updates to your MDX and allow your passengers to stream HD video for up to three devices. Select a AT&T data plan to get started.
+            </p>
+          </div>
+        </div>
+
+        <div class="disf0">
+          <div class="pman s2 cen-t">
+            <img
+              style="max-width: 100%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1714/aa39d588ebadcbde1aaa824d185d491fx.jpg"
+              alt=""
+            />
+            <h2>Wireless Charging</h2>
+            <p>
+              Enjoy the convenience of wireless charging with Qi-compatible devices and keep your smartphone powered up.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GET PRE-APPROVED -->
+      <div class="butn_div px-6">
+        <a href="https://www.hananiaacuraoforangepark.com/value-my-trade-in.htm">
+          <div class="btn_2 butn py-3 mx-auto">GET PRE-APPROVED</div>
+        </a>
+      </div>
+
+      <!-- Safety -->
+      <div class="cen-col" style="padding-bottom: 1.8rem;">
+        <p class="mp0 p-u" style="">SAFETY TECHNOLOGY</p>
+        <p class="mp0 tl">AcuraWatch™</p>
+        <p>
+          The MDX is equipped with a suite of available and standard innovative safety and driver-assistive technologies that help enhance driver awareness, avoid collisions, and mitigate the severity of an impact.*
+        </p>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1584/9086652a8caf4ab38c7229b465f84359x.jpg"
+            alt=""
+          />
+          <h2>Collision Mitigation Braking System™ (CMBS™)*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1366/b4907d5d27cb2193edf34a189a882d8fx.jpg"
+            alt=""
+          />
+          <h2>Road Departure Mitigation (RDM)*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1224/9f4ff818d8ec8adcd1389fdee7aaeba4x.jpg"
+            alt=""
+          />
+          <h2>Adaptive Cruise Control (ACC) with Low-Speed Follow*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0042/bb6b7d40375894494084ae2d7e089dcdx.jpg"
+            alt=""
+          />
+          <h2>Lane Keeping Assist System (LKAS)*</h2>
+        </div>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-75"></div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0329/75ed1bb03cf63505807fa8addb88f6a2x.jpg"
+            alt=""
+          />
+          <h2>Pedestrian Detection*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0210/7eb02ece3964ece0ad290bbd6560d9d7x.jpg"
+            alt=""
+          />
+          <h2>Traffic Sign Recognition*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1127/1ef592397a96c32e39082b96082c6acdx.jpg"
+            alt=""
+          />
+          <h2>Traffic Jam Assist*</h2>
+        </div>
+        <div class="colm-75"></div>
+      </div>
+
+      <!-- Safety-2 -->
+      <div class="cen-col" style="padding-bottom: 1.8rem; padding-top:3rem ;">
+        <p class="mp0 p-u" style="">SAFETY TECHNOLOGY</p>
+        <p class="mp0 tl">Safety & Driver Assist</p>
+        <p>
+          Alongside AcuraWatch, additional available driver-assistive technologies help enhance overall driver awareness from all sides of the vehicle.
+        </p>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0103/7a4a34bb69e15c2d5505a6dcd0c9aaf4x.jpg"
+            alt=""
+          />
+          <h2>Surround-View Camera*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1993/ceccf6ae7f0f7c406c053f793c35d3dbx.jpg"
+            alt=""
+          />
+          <h2>Blind Spot Information System*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0665/862a38289990a36c3f4cdfb46f33e3f9x.jpg"
+            alt=""
+          />
+          <h2>Rear Cross Traffic Monitor*</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1749/876264137cdb5e18b838e6ff6eb34a8fx.jpg"
+            alt=""
+          />
+          <h2>Low Speed Braking Control*</h2>
+        </div>
+      </div>
+
+      <!-- Accesories -->
+      <div class="cen-col" style="padding-bottom: 1.8rem; padding-top:3rem ;">
+        <p class="mp0 p-u" style="">ACCESSORIES</p>
+        <p class="mp0 tl">Make It Personal</p>
+        <h2 style="margin-bottom: 0.2rem">Exterior</h2>
+        <p>
+          Acura Genuine Accessories enhance the versatility and striking looks
+          of your MDX.
+        </p>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-75"></div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1943/44f3c814e7e4d14e1ecef6e59ee9f70ax.jpg"
+            alt=""
+          />
+          <h2>Genuine <br>
+            Accessories
+            </h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0178/24df44b8700903a26d73e060eaa29f1ax.jpg"
+            alt=""
+          />
+          <h2>Gloss Black <br> Emblems</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1682/ff05853efce9d3fb3ae30345c31279e2x.jpg"
+            alt=""
+          />
+          <h2>Running <br>
+            Boards
+            </h2>
+        </div>
+        <div class="colm-75"></div>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-75"></div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1944/004001f26dd77d66cb40fc49c5291a17x.jpg"
+            alt=""
+          />
+          <h2>Splash <br>
+            Guard Set
+            </h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0812/fc24b90627266f066ad1e2070d394d70x.jpg"
+            alt=""
+          />
+          <h2>Roof Rails w/<br>Crossbars</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0807/4d8b98e5bfaab50660e5307f07b8d1a3x.jpg"
+            alt=""
+          />
+          <h2>Bike<br>Attachment
+            </h2>
+        </div>
+        <div class="colm-75"></div>
+      </div>
+
+      <div class="cen-col" style="padding-bottom: 1.8rem; padding-top:2.5rem ;">
+        <h2 style="margin-bottom: 0.2rem">Interior</h2>
+        <p>
+          Amplify the comfort and premium functionality of your MDX with Acura
+          Genuine Accessories.
+        </p>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1029/289639dd03d0ce4967d1022867a5a0cdx.jpg"
+            alt=""
+          />
+          <h2>Heated Steering<br>
+            Wheel
+            </h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1712/63194e39d9efd9e047ac690a4c0083e7x.jpg"
+            alt=""
+          />
+          <h2>Premium Carpet Mat Set</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1701/962c9abe7bf10f1937ac824d01c0ffe6x.jpg"
+            alt=""
+          />
+          <h2>Cargo Cover</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0698/3743c724152fb9d529f1583f32d11425x.jpg"
+            alt=""
+          />
+          <h2>Folding Cargo
+            Tray
+            </h2>
+        </div>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0565/d52bb4871b06593bad22a72ee554aa30x.jpg"
+            alt=""
+          />
+          <h2>Cargo Protector</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1513/e19a26f188d0c52aa562cc909ac611ecx.jpg"
+            alt=""
+          />
+          <h2>Illuminated Door Sill Trim</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0303/31b75c77672722612c01a84842faa503x.jpg"
+            alt=""
+          />
+          <h2>All-Season Floor Mats</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1816/02797a2b356eb909a7dbec2d13ce58f4x.jpg"
+            alt=""
+          />
+          <h2>Illuminated Cargo Sill Trim</h2>
+        </div>
+      </div>
+
+      <div class="cen-col" style="padding-bottom: 1.8rem;  padding-top:2.5rem ;">
+        <h2 style="margin-bottom: 0.2rem">Type S</h2>
+        <p>
+          Enhance the style and the function of your MDX Type S with Acura
+          Genuine accessories.
+        </p>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0744/a2d55b77c89065b94c2b2d639fc264b6x.jpg"
+            alt=""
+          />
+          <h2>Illuminated Door Sill Trim</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0573/149a6c0bb1fc746a2b1c1fa782aca7dex.jpg"
+            alt=""
+          />
+          <h2>Gloss Black Emblems</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1594/34153e197a7af6e10cf6393657a0c581x.jpg"
+            alt=""
+          />
+          <h2>Premium Carpet
+            Mat Set
+            </h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1329/38ec695d12b0a104f35007782db02a34x.jpg"
+            alt=""
+          />
+          <h2>Folding Cargo
+            Tray
+            </h2>
+        </div>
+      </div>
+
+      <div class="rowm">
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1525/38c303bfcfa06a5798b10b89d463df7ex.jpg"
+            alt=""
+          />
+          <h2>All-Season Floor Mats</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0715/3f10d3f1304ef19f72f6d597242d9279x.jpg"
+            alt=""
+          />
+          <h2>Splash guard set</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/0629/7870c8c19985a41e3c7d0dc0f3d32e8fx.jpg"
+            alt=""
+          />
+          <h2>Crossbars</h2>
+        </div>
+        <div class="colm-20">
+          <img
+            src="https://pictures.dealer.com/a/acuraoforangeparkadw/1689/f3a76d340a0eb1101dc7be12cfb1f229x.jpg"
+            alt=""
+          />
+          <h2>Running Boards</h2>
+        </div>
+      </div>
+
+      <!-- PRICE AND SPECS  -->
+      <div style="color: white; ; margin-top: 2.5rem">
+        <div
+          class="cen-col blue">
+          <p class="mp0 tl" style="margin: 1.3rem 0">
+            Pricing & Specs
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="disf-c padm"
+        style="
+          padding-left: 0;
+          padding-right: 0;
+          background-color: #0d5db30d;
+          position: relative;
+          top: -4rem;
+          margin-bottom: -4rem;
+        "
+      >
+        <div class="rowm" style="margin: 0">
+          <div class="colm-30 demo" style="">
+            <img
+              style="max-width: 80%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0283/d189adaa100ee6418396703a4232fa82x.jpg"
+              alt=""
+            />
+            <h2 class="lag">MDX</h2>
+            <p class="sp">Starting MSRP</p>
+            <p class="pr">$49,850*</p>
+          </div>
+          <div class="colm-30 demo" style="">
+            <img
+              style="max-width: 80%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1325/2b17ca7d6738e24b8ac2fd29dd372ddax.jpg"
+              alt=""
+            />
+            <h2 class="lag">Technology</h2>
+            <p class="sp">Starting MSRP</p>
+            <p class="pr">$54,550*</p>
+          </div>
+          <div class="colm-30 demo" style="">
+            <img
+              style="max-width: 80%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0902/c0886c26bf4ace51ed29327ab424790cx.jpg"
+              alt=""
+            />
+            <h2 class="lag">A-Spec®</h2>
+            <p class="sp">Starting MSRP</p>
+            <p class="pr">$60,250*</p>
+          </div>
+        </div>
+        <div class="rowm" style="margin: 0">
+          <div class="colm-30 demo" style="">
+            <img
+              style="max-width: 80%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1198/db10fe9d175ba16199bd649adc636aacx.jpg"
+              alt=""
+            />
+            <h2 class="lag">Advance</h2>
+            <p class="sp">Starting MSRP</p>
+            <p class="pr">$63,800*</p>
+          </div>
+          <div class="colm-30 demo" style="">
+            <img
+              style="max-width: 80%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/1399/8f96674afa740d87d9aee41904f28728x.jpg"
+              alt=""
+            />
+            <h2 class="lag">Type S</h2>
+            <p class="sp">Starting MSRP</p>
+            <p class="pr">$68,150*</p>
+          </div>
+          <div class="colm-30 demo" style="">
+            <img
+              style="max-width: 80%"
+              src="https://pictures.dealer.com/a/acuraoforangeparkadw/0319/6b6e2085fcc1509e36e457ee093a51e3x.jpg"
+              alt=""
+            />
+            <h2 class="lag">Type S Advance</h2>
+            <p class="sp">Starting MSRP</p>
+            <p class="pr">$73,500*</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <div
+        class="d-flex BN justify-content-evenly py-5 px-3 px-6 bgblack pb-4"
+        style="position: relative; top: -1px; margin-bottom: -1"
+      >
+        <a
+          class="btn butn py-4 mb-4"
+          href="https://www.hananiaacuraoforangepark.com/new-inventory/index.htm"
+        >
+          <div>VIEW INVENTORY</div>
+        </a>
+        <a
+          class="btn butn py-4 mb-4"
+          href="https://www.hananiaacuraoforangepark.com/tools/tradepending/whats-my-buying-power.htm"
+        >
+          <div>GET A QUOTE</div>
+        </a>
+        <a
+          class="btn butn py-4 mb-4"
+          href="https://www.hananiaacuraoforangepark.com/tools/tradepending/value-your-trade.htm"
+        >
+          <div>VALUE YOUR TRADE</div>
+        </a>
+        <a class="btn butn py-4 mb-4" href="https://www.hananiaacuraoforangepark.com/value-my-trade-in.htm">
+          <div>GET PRE-APPROVED</div>
+        </a>
+      </div>
+
+      <!-- text -->
+      <div style="margin-top: 5rem ;">
+        <p>*MSRP<br />
+          Prices shown are Acura suggested retail prices only and do not include taxes, license or destination and handling charge. Destination & Handling charge for cars (excluding PMC Edition) and SUVs (excluding PMC Edition) is $1,195.00. Destination & Handling charge for PMC Edition models is $1,995.00. Premium Paint colors are $600 and not included. Acura vehicle accessory costs, labor and installation vary. Dealers set their own prices. Please consult your selected dealer.</p>
+          
+          <p>*HORSEPOWER<br />
+          @6200 rpm SAE net.</p>
+          
+          <p>*2023 MDX EPA MPG RATING<br />
+          FWD<br />
+          MPG 19 / 26 / 22 (city / hwy / combined)<br />
+          SH-AWD®<br />
+          MPG 19 / 25 / 21 (city / hwy / combined)<br />
+          Type S<br />
+          MPG 17 / 21 / 19 (city / hwy / combined)<br />
+          Use for comparison purposes only. Your actual mileage will vary, depending on how you drive and maintain your vehicle, driving conditions, and other factors.</p>
+          
+          <p>*Type S Horsepower<br />
+          @ 5500 rpm SAE net<br />
+          *Towing Capacity<br />
+          Towing requires the addition of the Acura accessory trailer hitch and hitch ball. Please see your Acura dealer for details. Added cargo weight in the vehicle may reduce max towing capacity, see Owner's Guide for details. <br />
+          *2023 EPA Mileage<br />
+          Based on 2023 EPA mileage ratings. Use for comparison purposes only. Your actual mileage will vary, depending on how you drive and maintain your vehicle, driving conditions, battery pack age/condition (hybrid only) and other factors.</p>
+          
+          <p>*5,000 LB Max Towing Capacity<br />
+          5,000 lb. capacity is with the optional Acura Genuine Accessory ATF cooler. Towing requires the addition of the Acura accessory trailer hitch and hitch ball. Please see your Acura dealer for details. Number of occupants and added cargo weight in the vehicle may reduce max towing capacity, see Owner's Guide for details.</p>
+          
+          <p>*Cargo Volume<br />
+          Based on SAE J1100 cargo volume measurement standard plus floor space between first and second seats and front seats moved forward. This figure compares more accurately with most competitive measurements.</p>
+          
+          <p>*AcuraWatch<br />
+          AcuraWatch system accuracy will vary based on weather, speed, road conditions and other factors. System may not detect all objects ahead of, beside or behind the vehicle and may not detect a given object. System may not detect all lane markings or lane/road departures. System operation affected by extreme interior heat. Driver remains responsible for safely operating vehicle and avoiding collisions.<br />
+          Adaptive Cruise Control should not be used in heavy traffic, poor weather or on winding roads.<br />
+          Collision Mitigation Braking System only is designed to mitigate crash forces; it may not avoid all collisions. Depending on the circumstances, CMBS may not go through all the alert stages before initiating the last stage of collision mitigation.<br />
+          Forward Collision Warning system does not include a braking function.<br />
+          Lane Keeping Assist System and/or Traffic Jam Assist only assist driver in maintaining proper lane position when lane markings are identified without a turn signal in use and can only apply mild steering torque to assist.<br />
+          Road Departure Mitigation (RDM) with Lane Departure Warning (LDW) only alerts drivers when lane drift is detected without a turn signal in use. RDM can apply mild steering torque to assist in maintaining proper lane position and/or brake pressure to slow the vehicle's departure from a detected lane.</p>
+          
+          <p>*Collision Mitigation Braking System<br />
+          CMBS with FCW cannot detect all objects ahead and may not detect a given object; accuracy will vary based on weather, speed, and other factors. System operation affected by extreme interior heat. FCW does not apply braking, and CMBS only is designed to mitigate crash forces. Depending on the circumstances, CMBS may not go through all the alert stages before initiating the last stage of collision mitigation. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Road Departure Mitigation System (RDM)<br />
+          Road Departure Mitigation only alerts drivers when lane drift is detected without a turn signal in use and can apply mild steering torque to assist driver in maintaining proper lane position and/or brake pressure to slow the vehicle's departure from a detected lane. RDM may not detect all lane markings or lane departures; accuracy will vary based on weather, speed and road condition. System operation affected by extreme interior heat. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Adaptive Cruise Control (ACC) with Low-Speed Follow<br />
+          ACC with Low-Speed Follow cannot detect all objects ahead and may not detect a given object; accuracy will vary based on weather, speed, and other factors. System operation affected by extreme interior heat. ACC should not be used in heavy traffic, poor weather, or on winding roads. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Lane Keeping Assist System (LKAS)<br />
+          LKAS only assists driver in maintaining proper lane position when lane markings are identified without a turn signal in use and can only apply mild steering torque to assist. LKAS may not detect all lane markings; accuracy will vary based on weather, speed and road condition. System operation affected by extreme interior heat. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Pedestrian Detection<br />
+          CMBS with Pedestrian Detection cannot detect all objects ahead and may not detect a given object; accuracy will vary based on weather, speed and other factors. System operation affected by extreme interior heat. System designed to mitigate crash forces. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Traffic Sign Recognition (TSR)<br />
+          TSR cannot detect all traffic signs and may misidentify certain signs. Accuracy will vary based on weather and other factors. System operation affected by extreme interior heat. Driver remains responsible for complying with all traffic regulations.</p>
+          
+          <p>*Lane Keeping Assist System (LKAS) and Traffic Jam Assist (TJA):<br />
+          Lane Keeping Assist System (LKAS) and Traffic Jam Assist (TJA) only assists driver in maintaining proper lane position when lane markings are identified without a turn signal in use and can only apply mild steering torque to assist. The system may not detect all lane markings; accuracy will vary based on weather, speed and road condition. System operation affected by extreme interior heat. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Surround-View Camera System<br />
+          Always visually confirm that it is safe to drive; the camera display does not provide complete information about all conditions and objects around your vehicle.</p>
+          
+          <p>*Blind Spot Information with Rear Cross Traffic Monitor<br />
+          The systems are not a substitute for your own visual assessment before changing lanes or backing up, and may not detect all objects, or provide complete information about conditions behind or to the side of the vehicle. System accuracy will vary based on weather, size of object, and speed. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Blind Spot Information with Rear Cross Traffic Monitor<br />
+          The systems are not a substitute for your own visual assessment before changing lanes or backing up, and may not detect all objects, or provide complete information about conditions behind or to the side of the vehicle. System accuracy will vary based on weather, size of object, and speed. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Low Speed Braking Control<br />
+          Low-Speed Braking Control may not detect all objects in front of or behind the vehicle. Accuracy will vary based on weather, speed and other factors. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+          
+          <p>*Exclusive mode for Type S</p>
+          
+          <p>*Android Auto Integration<br />
+          To wirelessly use Android Auto on your car display, you need a compatible Android smartphone with an active data plan. Depending on use, Android Auto can share certain user and vehicle information (e.g., vehicle location, speed and other operating conditions) with Google and its service providers. See Google privacy policy for details regarding Google’s use and handling of data uploaded by Android Auto. Use of Android Auto is at user’s own risk, and is subject to agreement to the Android Auto terms of use, which are presented to the user when the Android Auto application is downloaded to the user’s Android phone. Android Auto vehicle integration is provided "as is," and Acura cannot guarantee Android Auto operability or functionality now or in the future due to, among other conditions, changes in Android Auto software/Android operating system, service interruptions, or incompatibility or obsolesce of vehicle-integrated hardware or software. See dealer for details. Only use Android Auto when conditions allow you to do so safely. Google, Google Play and Android Auto are trademarks of Google LLC.</p>
+          
+          <p>*Apple CarPlay Integration<br />
+          Depending on use, Apple CarPlay can share certain user and vehicle information (e.g., vehicle location, speed and other operating conditions) with the connected iPhone. See Apple's privacy policy for details regarding Apple's use and handling of data uploaded by CarPlay. Use of CarPlay is at user's own risk, and is subject to agreement to the CarPlay terms of use, which are included as part of the Apple iOS terms of use. CarPlay vehicle integration is provided "as is," and Acura cannot guarantee CarPlay operability or functionality now or in the future due to, among other conditions, changes in CarPlay software/Apple iOS, service interruptions, or incompatibility or obsolesce of vehicle-integrated hardware or software. See dealer for details.</p>
+          
+          <p>*Wi-Fi Hotspot<br />
+          Requires AT&T data plan. Coverage & service not available everywhere. Fees, terms & restrictions apply.</p>
+          
+          <p>*AcuraLink® Connected Services<br />
+          Select AcuraLink features are complimentary. 36 month complimentary trials are available for Security and Remote packages. A subscription is required to continue AcuraLink services after the trial ends.</p>
+          
+          <p>*ELS<br />
+          ELS Surround® and ELS Studio® are registered trademarks of Panasonic Corporation of North America. All rights reserved.</p>
+          
+          <p>*Alexa Built-in<br />
+          Amazon, Alexa and all related marks are trademarks of Amazon, com, Inc, or its affiliates. Certain Alexa functionality is dependent on smart home technology<br />
+          </p>
+      </div>
+    </div>
+  </body>
+</html>
